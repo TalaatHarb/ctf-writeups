@@ -1,0 +1,59 @@
+python3 exploit_random.py
+[+] Opening connection to 66.172.10.203 on port 2570: Done
+Please submit a printable string X, such that sha224(X)[-6:] = 2aad42 and len(X) = 32
+
+Attempt( 2aad42 ): 0 , new_str = :vM>ra8^#:V^!sN8]5sm/b*gqu8Ue+3N , new_hash_seg = 44751d
+string = "#Lv7l\}x*2zUqd<)c-ERp%,N)N5!NKo
+hash = b8dddee3a6e47bc1d41551f04a8994129f92b8547f0470afce2aad42
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++  hi powerful coders! Your mission is to find weird hash collision,   +
+
++  its baby level, so dont over-think please!!                         +
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+| Options:
+
+|    [B]aby hash function
+
+|    [C]onditions
+
+|    [R]eport collision!
+
+|    [Q]uit
+
+| (m, n, x_head, y_head) = (230, 207, 'WXd', 'dead')
+
+| Options:
+
+|    [B]aby hash function
+
+|    [C]onditions
+
+|    [R]eport collision!
+
+|    [Q]uit
+
+Attempt: 0 , x = WXdzqH/mZ~2k96'0-bU~XF;Vo5Y9SlFCSqq , x_hash = cbe5990e5aa23d01a41e8eb43af5223d
+Attempt: 10000 , x = WXdf:G4F*_|M$MD1!^rzJTGqur&(21DMlp. , x_hash = 4681c3fb8a1f8ffdc0b8e94328dc90a1
+Attempt: 20000 , x = WXd<T+[7/E&DDJT[=eF-}AV/qF3yj2Cu0l0 , x_hash = 59bb06bdc777e3367eb0e524f691d5a4
+Attempt: 30000 , x = WXd4yu(Q9hS0lJIK9^VMx-aF$0BFeq,4zUl , x_hash = 85e07b45af9cf597d6ff5d5ed143a574
+Attempt: 40000 , x = WXdtXdx<Co:0~A^-SY`.vIhE)?zxBl\A&PR , x_hash = ff904241466cb9d38e2cbaf40e17aa9e
+Attempt: 50000 , x = WXd:Xku/"`FD{tH!uD,1iTu11W,>.I-6$$S , x_hash = 93760be09e82f8e3e92b95d06a5b49f7
+Attempt: 60000 , x = WXd{$;]8(jT>H,BSnvj2h=Q}3o8_fCoS+Rs , x_hash = 94ffd3bbb40fdc31f21a280f4776a10c
+x = WXd){&~D2hLJVy)$o\HGkqcl5|$lQ:)be6Z , y = dead0107ad2af5989780d46bc8449a6f
+[*] Switching to interactive mode
+| (m, n, x_head, y_head) = (230, 207, 'WXd', 'dead')
+| Options:
+|    [B]aby hash function
+|    [C]onditions
+|    [R]eport collision!
+|    [Q]uit
+| please send first string, x:
+| please send second string, y:
+| Congrats! You find the collision!! the flag is: ASIS{MD5_c0L1iD!N9_iZ_4pProX1mA73lY_1.47*10^-29}
+[*] Got EOF while reading in interactive
+$
+[*] Interrupted
+[*] Closed connection to 66.172.10.203 port 2570
