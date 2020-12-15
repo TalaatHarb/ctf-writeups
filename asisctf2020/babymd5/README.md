@@ -1,5 +1,6 @@
 # Challenge Description
 Baby MD5
+
 Your mission is to find weird hash collision!
 
 nc 66.172.10.203 2570
@@ -12,10 +13,11 @@ Booth parts are about getting partial hash collisions and by that I mean (4-6) h
 You are asked to provide a printable string with a defined length that when hashed with a hash function (that is defined in the question); will have the requested 6 hex digits at the end of the hash
 
 Example: Please submit a printable string X, such that sha1(X)[-6:] = 5f4774 and len(X) = 32
+
 options for hash functions are SHA1, SHA224, SHA256, SHA384, SHA512, MD5 and may be others that I didn't see
 
 ### How to solve?
-Generating random strings(or a padded counter string) with the requested length and testing if thier hash matches the required digits is actually possible since the search is space only 6 hex digits
+Generating random strings(or a padded counter string) with the requested length and testing if thier hash matches the required digits is actually possible since the search space is only 6 hex digits
 Something like this in a loop could work
 ```python
    new_str = ''.join(random.choice(string.ascii_letters) for _ in range(length)) # f'{counter}'.rjust(length, '0')
