@@ -49,6 +49,7 @@ Executing this code confirms that the hashing function is vulnerable to length e
 
 ### Exploit
 The exploit works as follows, hit the first end point with the right parameters that it expects and receicve the signature and then manufacture another request instead of the redirected one that contains the padding and an additional 'cmd' parameter that prints the flag for you and of course predict the signature for this new request using the length extension attack
+For the prediction to work you will need to do the attack multiple times with different secret length parameters until you get it right
+by trail and error(there is a limit on the server for the number of calls so you might need to do the trails slowly) the secret length is: 32 (this should be easily guessed)
 
-
-For the actual exploit check the original write-up
+Doing the exploit as mentioned above returns the flag if the command is 'cat /flag*' hxp{merkle-damgard, ha! you fell victim to one of the classic blunders!}
