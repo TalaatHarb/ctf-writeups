@@ -15,7 +15,7 @@ If you turned on debugging, the server provides how long the verfication takes a
 you can actually have an exact value for the difference in timing from the code but haveing an exact value isn't that important as long as you can get a good enough approximation for the time added by each byte
 
 You perform a timing based side channel attack by trying each byte until you get a byte that takes longer than the other with a noticable step (and due to the unstability of the calculation, you might need to do multiple attempts and then average them out)
-The maximum number of attempts for this scenario is 256*32 = 2^8*2^5 = 2^13 = 8192 but since the attempts start taking longer and longer you might need to keep trying for about 20 minutes
+The maximum number of attempts for this scenario is 8192 but since the attempts start taking longer and longer you might need to keep trying for about 20 minutes
 
 The exploit implemented in python included some tolerance for the timining and confirmation steps for each byte and also backing of when it thinks it estimated something in the wrong way
 but the essense of the attack is the same and follows the following pseudo code:
